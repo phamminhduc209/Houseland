@@ -26,7 +26,7 @@
 body {
   background-color: #fcfcfc;
   color: #414141;
-  font: 12px/18px Arial, Helvetica, sans-serif;
+  font: 13px Tahoma, Helvetica, sans-serif;
   font-style: normal;
   font-weight: normal;
   overflow-x: hidden;
@@ -40,7 +40,11 @@ a:focus {
   color: #999999;
   text-decoration: none;
   outline: none;
-  transition: all 0.25s;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 p { margin: 0; }
 select:focus, button:focus, input:focus { outline: none; }
@@ -119,3 +123,178 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*===== Header =====*/
+/* Block Header Top  */
+.block-header-top {
+  background: #000000;
+}
+.block-intro {
+  color: #fff;
+  font-style: italic;
+  line-height: 60px;
+}
+.block-search .block-search-inner {
+  border: 1px solid #ff6600;
+  height: 40px;
+  position: relative;
+  margin-top: 10px;
+}
+.block-search .input-serach {
+  float: left;
+  width: 64%;
+}
+.block-search .select-choice {
+  float: left;
+  width: 36%;
+  background: #fff;
+  height: 38px;
+}
+.block-search .input-serach input {
+  padding: 0 10px 0 20px;
+  height: 38px;
+  line-height: 38px;
+}
+.block-search .form-category {
+  position: relative;
+  padding: 0 11px;
+}
+.block-search .form-category:after {
+  content: "|";
+  color: #ff6600;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.block-search #choice option {
+  color: black;
+}
+.block-search .empty,
+.block-search #choice option[value="0"] {
+  color: #a6a6a6;
+}
+.btn-search {
+  width: 39px;
+  height: 39px;
+  background: #ff6600;
+  border: none;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.btn-search i {
+  color: #fff;
+  font-size: 17px;
+}
+.btn-search:hover {
+  background: #fb7c28;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+/* Block Header bottom */
+.block-header-bottom {
+  padding: 25px 0;
+}
+.block-header-bottom .block-info {
+  margin-top: 15px;
+}
+.logo {}
+.block-info .hotline,
+.block-info .email {
+  float: left;
+}
+.block-info .hotline {
+  margin-right: 27px;
+}
+.block-info i {
+  float: left;
+  font-size: 40px;
+  color: #ff6600;
+  margin-right: 10px;
+}
+.block-info i.fa-phone {
+  padding-top: 3px;
+}
+.block-info .hotline p,
+.block-info .email p {
+  float: left;
+}
+.block-info .hotline p span.title,
+.block-info .email p span.title {
+  display: block;
+  color: #666666;
+  margin-bottom: 5px;
+}
+.block-info .hotline p span.info,
+.block-info .email p span.info {
+  display: block;
+  color: #333333;
+  font-weight: bold;
+}
+/* Menu Top */
+.menu-top {
+  background: #ff6600;
+}
+.nav-menu>li {
+  float: left;
+  position: relative;
+  display: block;
+}
+.nav-menu>li>a {
+  font-size: 13px;
+  text-transform: uppercase;
+  display: block;
+  padding: 0;
+  line-height: 40px;
+  min-width: 105px;
+  text-align: center;
+  color: #fff;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.nav-menu>li:hover > a, .nav-menu>li.active a {
+  background: #ff781e;
+  -webkit-transition: all 0.45s ease;
+  -o-transition: all 0.45s ease;
+  -ms-transition: all 0.45s ease;
+  transition: all 0.45s ease;
+}
+.nav-menu > li.parent > a:after {
+  font-family: 'Fontawesome';
+  color: #fff;
+  font-size: 10px;
+  content: "\f0dd";
+  display: inline-block;
+  height: 3px;
+  width: 5px;
+  margin: 0 0 0 10px;
+  vertical-align: 2px;
+}
+.nav-menu .submenu {
+  background: #fff;
+  text-align: left;
+  display: block;
+  position: absolute;
+  top: 100%;
+  font-size: 14px;
+  width: 260px;
+  padding: 0 20px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 10px 0px;
+  border: none;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 1;
+  z-index: 99;
+  visibility: visible;
+  -webkit-transform: translate(0, 10px);
+  -ms-transform: translate(0, 10px);
+  -o-transform: translate(0, 10px);
+  transform: translate(0, 10px);
+}
