@@ -1,0 +1,121 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*==========*/
+/*  
+  [Let press Ctrl + f and type of paste the key, then press Enter to search the content ] Title
+  Example : You want Import Files => Title is Import Files, or Fonts => Title is Fonts
+
+  
+  
+/*==========*/
+
+/*===== Import Files =====*/
+/* Fonts */
+
+/*  Css */
+@import url(../lib/bootstrap/bootstrap.min.css);
+@import url(../lib/font-awesome/font-awesome.min.css);
+@import url(../lib/carousel/owl.carousel.min.css);
+
+/*===== Layout Style =====*/
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #fcfcfc;
+  color: #414141;
+  font: 12px/18px Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  overflow-x: hidden;
+}
+a {
+  color: #000000;
+  outline: none;
+}
+a:hover,
+a:focus {
+  color: #999999;
+  text-decoration: none;
+  outline: none;
+  transition: all 0.25s;
+}
+p { margin: 0; }
+select:focus, button:focus, input:focus { outline: none; }
+.btn.focus, .btn:focus, .btn:hover {
+  color: #333;
+  text-decoration: none;
+  outline: none;
+}
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+  outline: none;
+}
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea, select, input[type="number"],
+input[type="tel"] {
+  border: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+ul li,
+ol li {
+  list-style: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.clearfix { clear: both; }
+
+/*===== Common =====*/
+.block {
+  margin-bottom: 20px;
+  position: relative;
+  display: block;
+}
+.block_breadcrumb .breadcrumb {
+  background: transparent;
+  margin-bottom: 0;
+  padding: 0;
+}
+.block_breadcrumb .breadcrumb li a {
+  color: #999;
+}
+.block_breadcrumb .breadcrumb li.active {
+  color: #414141;
+}
+.block_breadcrumb .breadcrumb>li+li:before {
+  padding: 0 5px;
+  color: #465363;
+  content: "/\00a0";
+}
+.main .container {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  padding-top: 20px;
+}
+.main_de_old .container {
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+}
+
+/*===== Header =====*/
