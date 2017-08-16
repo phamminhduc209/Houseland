@@ -823,3 +823,38 @@ footer .footer-bot .container {
   color: #666;
   font-size: 40px;
 }
+
+.block-ct-news .item {
+  border: 2px solid transparent;
+  padding: 5px;
+  margin-bottom: 50px;
+  -webkit-box-shadow: 8px 8px 12px -6px rgba(0,0,0,0.2);
+  -moz-box-shadow: 8px 8px 12px -6px rgba(0,0,0,0.2);
+  box-shadow: 8px 8px 12px -6px rgba(0,0,0,0.2);
+}
+.block-ct-news .row:last-child .item {
+  margin-bottom: 0;
+}
+.block-ct-news .item:hover {
+  border: 2px solid #ff6600;
+}
+.block-ct-news .item .des {
+  padding: 15px 10px;
+  overflow: hidden;
+}
+.block-ct-news .item .des a {
+  color: #ff6600;
+  font-size: 13px;
+  line-height: 1.6;
+  max-height: 40px;
+  overflow: hidden;
+  display: block;
+  margin-bottom: 10px;
+}
+.block-ct-news .item .des .code {
+  color: #666666;
+  font-size: 13px;
+}
+.block-ct-news .item .des .code span {
+  color: #333333;
+}
