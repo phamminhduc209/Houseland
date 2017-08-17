@@ -895,6 +895,48 @@ footer .footer-bot .container {
   line-height: 1.6;
 }
 
+
+.block-dt-news h2.title {
+  color: #ff6600;
+  font-size: 18px;
+  display: block;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.block-dt-news p.text {
+  font-size: 13px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.block-tags ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.block-tags ul li:last-child {
+  margin-right: 0;
+}
+.block-tags .tags-first {
+  font-weight: bold;
+  color: #3a3a3c;
+  font-size: 13px;
+}
+.block-tags li.tags-link a {
+  width: 100px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  background: #ffe0cc;
+  border-radius: 50px;
+  display: block;
+}
+.block-tags li.tags-link.active a,
+.block-tags li.tags-link:hover a {
+  background: #ff6600;
+  color: #fff
+}
+
 .block-module .block-title h2 {
   line-height: 40px;
   color: #fff;
