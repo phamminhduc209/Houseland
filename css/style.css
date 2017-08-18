@@ -937,11 +937,12 @@ footer .footer-bot .container {
   color: #fff
 }
 
+/*===== Block Sidebar =====*/
 .block-module .block-title h2 {
   line-height: 40px;
   color: #fff;
   background: #ff6600;
-  padding-left: 20px;
+  padding-left: 15px;
   font-size: 15px;
   text-transform: uppercase;
   max-width: 360px;
@@ -979,6 +980,42 @@ footer .footer-bot .container {
   overflow: hidden;
 }
 .block-news-sidebar .list .item:hover .description h2 {
+  color: #ff6600;
+}
+
+.block-links-sidebar .list {
+  border: 1px solid #ebebeb;
+  padding: 15px;
+  overflow-y: hidden;
+  position: relative;
+  margin-bottom: 30px;
+}
+.block-links-sidebar .list li {
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 15px;
+}
+.block-links-sidebar .list li:last-child {
+  margin-bottom: 0px;
+}
+.block-links-sidebar .list li:before {
+  content: "\f18e";
+  font-family: "FontAwesome";
+  font-size: 13px;
+  color: #ff6600;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+.block-links-sidebar .list li a {
+  font-size: 13px;
+  color: #333;
+  vertical-align: middle;
+}
+.block-links-sidebar .list li:hover a {
   color: #ff6600;
 }
 
@@ -1033,4 +1070,55 @@ footer .footer-bot .container {
   background: #ff6600;
   color: #fff;
   border-color: transparent;
+}
+
+/*===== Block Service =====*/
+.block-service .row .item {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+.block-service .row:last-child .item {
+  margin-bottom: 0px;
+}
+.block-service .item .thumb {
+  float: left;
+  width: 50px;
+  margin-right: 10px;
+}
+.block-service .item .des {
+  float: left;
+  width: calc(100% - 60px);
+}
+.block-service .item .des .title {
+  font-size: 13px;
+  color: #ff6600;
+  margin-bottom: 10px;
+}
+.block-service .item .des .description {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/*===== Block Form =====*/
+.block-form .form-control {
+  padding: 6px 12px;
+  border: 1px solid #adadad;
+}
+.block-form input::-webkit-input-placeholder {
+  color: #333;
+  opacity: 0.5;
+}
+.block-form input::-moz-placeholder { /* Firefox 19+ */
+  color: #333;
+  opacity: 0.5;
+}
+.block-form input:-ms-input-placeholder { /* IE 10+ */
+  color: #333;
+  opacity: 0.5;
+}
+.block-form input:-moz-placeholder { /* Firefox 18- */
+  color: #333;
+  opacity: 0.5;
 }
