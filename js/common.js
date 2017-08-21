@@ -55,32 +55,11 @@
   $('.fixed').sticky({ topSpacing: 0 });
 
   /*
-   * 4. Accordion has icon
-  */
-  $(document).on('click','.box-accordion > .accordion-header',function(event){
-    $(this).toggleClass('active');
-    $(this).toggleClass('opened');
-    $(this).next('.box-collapse').slideToggle(200);
-  });
-
-  /*
-   * 6. POPUP order a product - check on info Payment
-  */
-  $('.info-payment .item-group > input[type="checkbox"]').on('change', function(e){
-    console.log($(this).attr('checked'));
-    if ($(this).is(':checked')) {
-      $(this).siblings('.sub-hide-box').show();
-    } else {
-      $(this).siblings('.sub-hide-box').hide();
-    }
-  });
-
-  /*
    * 7. Main Menu
   */
-  $(".navbar-toggle").on( 'click', function() {
-    $( this ).toggleClass('has-open');
-    $("header .menu").toggleClass("has-open");
+  $(".nav-toogle").on( 'click', function() {
+    $(this).toggleClass('has-open');
+    $(".menu").toggleClass("has-open");
     $("body").toggleClass("menu-open");
   });
 
@@ -93,26 +72,5 @@
       $(this).toggleClass('open').siblings('.submenu').slideToggle();
     });
   });
-
-  /*
-   * 7. Click show hide Search Mobile
-  */
-  $('.block_search_mobile .fa_search_show').on('click', function() {
-    $('.block_search_mobile .block_search_inner').toggleClass('show');
-  })
-
-  if (!$('.pro-sts > a')) { return; }
-  $('.pro-sts').on( "mouseover", function() { 
-    $(this).addClass('shw');
-  }).on( "mouseout", function() {
-    $(this).removeClass('shw');
-  });
-
-  // Add class empty in select
-  $("#choice").change(function () {
-    if($(this).val() == "0") $(this).addClass("empty");
-    else $(this).removeClass("empty")
-  });
-  $("#choice").change();
 
 })(jQuery); // End of use strict
