@@ -14,16 +14,6 @@
    *    - 1.1. TYPE ELEMENT
    *    - 1.2. TYPE ELEMENT
    */
-  
-  /* ==========================================================================
-     0. ELEMENT
-     ========================================================================== */
-  
-  /* 0.1. TYPE ELEMENT
-     ========================================================================== */
-  
-  /* 0.2. TYPE ELEMENT
-     ========================================================================== */
 
 /*===== Import Files =====*/
 /* Fonts */
@@ -131,22 +121,30 @@ h1, h2, h3, h4, h5, h6 {
   content: "\f178";
 }
 
-/*===== Header =====*/
-/* Block Header Top  */
+/* Block Header Top
+  ========================================================================== */
 .block-header-top {
   background: #000000;
 }
+/* Block Intro */
 .block-intro {
   color: #fff;
   font-style: italic;
   line-height: 60px;
 }
+
+/* Block Search */
 .block-search .block-search-inner {
   border: 1px solid #ff6600;
   height: 40px;
   position: relative;
   margin-top: 10px;
   background: #fff;
+}
+.block-search .block-search-inner form {
+  float: left;
+  width: 100%;
+  background: #ff6600;
 }
 .block-search .input-serach {
   float: left;
@@ -204,17 +202,19 @@ h1, h2, h3, h4, h5, h6 {
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-/* Block Header bottom */
+
+/* Block Header Bot */
 .block-header-bottom {
   padding: 25px 0;
 }
 .block-header-bottom .block-info {
   margin-top: 15px;
 }
-.logo {}
-.block-info .hotline,
-.block-info .email {
+.block-info .hotline {
   float: left;
+}
+.block-info .email {
+  float: right;
 }
 .block-info .hotline {
   margin-right: 27px;
@@ -244,7 +244,9 @@ h1, h2, h3, h4, h5, h6 {
   color: #333333;
   font-weight: bold;
 }
-/* Menu Top */
+
+/* Menu Top
+  ========================================================================== */
 .menu-top {
   background: #ff6600;
 }
@@ -359,7 +361,8 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
-/*===== Block Big Title =====*/
+/* Block Big Title
+  ========================================================================== */
 .block_big-title h2 {
   font-size: 18px;
   color: #ff6600;
@@ -376,11 +379,8 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.6;
 }
 
-/*===== Block Product =====*/
-.block-product {
-  position: relative;
-  overflow: hidden;
-}
+/* Block Ttitle Commom
+  ========================================================================== */
 .block-title-commom .block-title {
   background: #eaeaea;
 }
@@ -394,6 +394,9 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 360px;
   position: relative;
 }
+.block-title-commom .block-title h2 i {
+  font-size: 18px;
+}
 .block-title-commom .block-title h2:before {
   position: absolute;
   content: url("../images/triangle.png");
@@ -406,6 +409,13 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   bottom: 0;
   right: -20px;
+}
+
+/* Block Product 
+  ========================================================================== */
+.block-product {
+  position: relative;
+  overflow: hidden;
 }
 .block-product .item {
   padding: 1px;
@@ -482,6 +492,8 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
 }
 
+/* Block Banner 
+  ========================================================================== */
 .block-banner {
   background-image: url(../images/banner/1.jpg);
   background-attachment: fixed;
@@ -491,6 +503,8 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
 }
 
+/* Block News 
+  ========================================================================== */
 .block-news li {
   border-bottom: 1px solid #d8d8d8;
   padding-bottom: 20px;
@@ -549,6 +563,8 @@ h1, h2, h3, h4, h5, h6 {
   color: #ff6600;
 }
 
+/* Block Number 
+  ========================================================================== */
 .block-number {
   background-image: url(../images/bg.png);
   background-attachment: fixed;
@@ -618,6 +634,8 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.6;
 }
 
+/* Footer
+  ========================================================================== */
 footer .footer-top {
   padding: 40px 0;
   background: #0f1416;
@@ -639,6 +657,8 @@ footer .footer-top {
   position: absolute;
   bottom: -2px;
 }
+
+/* Footer Link  */
 .ft-link .item {
   margin-bottom: 30px;
 }
@@ -683,6 +703,7 @@ footer .footer-top {
   color: #ff6600;
   padding-left: 10px;
 }
+
 /* Form Register */
 .resgis-form {
   height: 40px;
@@ -743,7 +764,9 @@ footer .footer-bot .container {
   line-height: 40px;
   color: #ffffff;
 }
-/* Chat */
+
+/* Chat
+  ========================================================================== */
 .chat {
   color: #ffffff;
   position: absolute;
@@ -758,7 +781,8 @@ footer .footer-bot .container {
   border-top-right-radius: 5px;
 }
 
-/*===== About =====*/
+/* About
+  ========================================================================== */
 .block-article .title {
   font-size: 14px;
   font-weight: bold;
@@ -775,7 +799,9 @@ footer .footer-bot .container {
 .block-article .description:last-child {
   margin-bottom: 0;
 }
-/* Members */
+
+/* Block Members
+  ========================================================================== */
 .block-members {
   background: #ededed;
   padding: 40px 0;
@@ -840,6 +866,8 @@ footer .footer-bot .container {
   font-size: 40px;
 }
 
+/* Block Pro Child Cate
+  ========================================================================== */
 .block-ct-pro .item {
   border: 2px solid transparent;
   padding: 5px;
@@ -866,6 +894,7 @@ footer .footer-bot .container {
   overflow: hidden;
   display: block;
   margin-bottom: 10px;
+  font-weight: bold;
 }
 .block-ct-pro .item .des .code {
   color: #666666;
@@ -875,6 +904,8 @@ footer .footer-bot .container {
   color: #333333;
 }
 
+/* Block News Cate
+  ========================================================================== */
 .block-ct-news .item {
   float: left;
   width: 100%;
@@ -911,7 +942,8 @@ footer .footer-bot .container {
   line-height: 1.6;
 }
 
-
+/* Block News Detail
+  ========================================================================== */
 .block-dt-news h2.title {
   color: #ff6600;
   font-size: 18px;
@@ -956,7 +988,8 @@ footer .footer-bot .container {
   color: #fff
 }
 
-/*===== Block Sidebar =====*/
+/* Block Sidebar
+  ========================================================================== */
 .block-module .block-title h2 {
   line-height: 40px;
   color: #fff;
@@ -1002,6 +1035,7 @@ footer .footer-bot .container {
   color: #ff6600;
 }
 
+/* Block Links Sidebar */
 .block-links-sidebar .list {
   border: 1px solid #ebebeb;
   padding: 15px;
@@ -1038,7 +1072,8 @@ footer .footer-bot .container {
   color: #ff6600;
 }
 
-/*===== Block Pagination =====*/
+/* Block Pagination
+  ========================================================================== */
 .block-pagination .pagination {
   text-align: center;
   display: block;
@@ -1092,7 +1127,8 @@ footer .footer-bot .container {
   border-color: transparent;
 }
 
-/*===== Block Service =====*/
+/* Block Service
+  ========================================================================== */
 .block-service .row .item {
   position: relative;
   overflow: hidden;
@@ -1121,7 +1157,8 @@ footer .footer-bot .container {
   line-height: 1.6;
 }
 
-/*===== Block Form =====*/
+/* Block Form
+  ========================================================================== */
 .block-form .form-control {
   padding: 6px 12px;
   border: 1px solid #adadad;
@@ -1162,6 +1199,8 @@ footer .footer-bot .container {
   opacity: 0.5;
 }
 
+/* Title Page
+  ========================================================================== */
 h2.tit-page {
   font-size: 14px;
   color: #ff6600;
@@ -1179,7 +1218,8 @@ h2.tit-page3 {
   margin-bottom: 20px;
 }
 
-/*===== Contact =====*/
+/* Contact
+  ========================================================================== */
 .block-map object {
   width: 100%;
   height: 400px;
@@ -1198,7 +1238,8 @@ h2.tit-page3 {
   margin-bottom: 0;
 }
 
-/*===== Detail =====*/
+/* Detail
+  ========================================================================== */
 .block-slide-detail #slider.flexslider {
   border: none;
   margin-bottom: 15px;
@@ -1278,6 +1319,8 @@ h2.tit-page3 {
   font-size: 15px;
 }
 
+/* Block Tabs
+  ========================================================================== */
 .block-tabs .nav-tabs {
   border-bottom: 1px solid #ff6600;
 }
@@ -1332,4 +1375,116 @@ h2.tit-page3 {
 }
 .block-tabs p.image {
   margin: 0 auto;
+}
+
+/* Block Relative 
+  ========================================================================== */
+.block-relative ul li.item {
+  border: 2px solid transparent;
+  padding: 5px;
+  -webkit-box-shadow: 8px 8px 12px -6px rgba(0,0,0,0.2);
+  -moz-box-shadow: 8px 8px 12px -6px rgba(0,0,0,0.2);
+  box-shadow: 8px 8px 12px -6px rgba(0,0,0,0.2);
+}
+.block-relative .item .des {
+  padding: 15px 10px;
+  overflow: hidden;
+}
+.block-relative .item .des a {
+  color: #ff6600;
+  font-size: 13px;
+  line-height: 1.6;
+  max-height: 40px;
+  overflow: hidden;
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.block-relative .item .des .code {
+  color: #666666;
+  font-size: 13px;
+}
+.block-relative .item .des .code span {
+  color: #333333;
+}
+.block-relative ul .center li.item,
+.block-relative ul li.item:hover {
+  border: 2px solid #ff6600;
+}
+.block-relative .owl-nav .owl-prev,
+.block-relative .owl-nav .owl-next {
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  height: 50px;
+  text-align: center;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+.block-relative .owl-nav .owl-prev:hover,
+.block-relative .owl-nav .owl-next:hover {
+  background: rgba(0, 0, 0, 1);
+}
+.block-relative .owl-nav .owl-prev.disabled,
+.block-relative .owl-nav .owl-next.disabled {
+  background: rgba(0, 0, 0, 0.6);
+}
+.block-relative .owl-nav .owl-prev i,
+.block-relative .owl-nav .owl-next i {
+  font-size: 30px;
+  color: #fff;
+  line-height: 50px;
+}
+.block-relative .owl-nav .owl-prev {
+  left: 0;
+}
+.block-relative .owl-nav .owl-next {
+  right: 0;
+}
+
+/* Back To Top
+  ========================================================================== */
+.td-scroll-up {
+  cursor: pointer;
+  position: fixed;
+  bottom: 4px;
+  right: 5px;
+  width: 40px;
+  height: 40px;
+  background-color: #fb7c28;
+  z-index: 1;
+  transform: translate3d(0, 70px, 0);
+  -webkit-transform: translate3d(0, 70px, 0);
+  -moz-transform: translate3d(0, 70px, 0);
+  -ms-transform: translate3d(0, 70px, 0);
+  -o-transform: translate3d(0, 70px, 0);
+  -webkit-transition: transform 0.4s cubic-bezier(0.55, 0, 0.1, 1) 0s;
+  -moz-transition: transform 0.4s cubic-bezier(0.55, 0, 0.1, 1) 0s;
+  -o-transition: transform 0.4s cubic-bezier(0.55, 0, 0.1, 1) 0s;
+  transition: transform 0.4s cubic-bezier(0.55, 0, 0.1, 1) 0s;
+}
+.td-scroll-up-visible {
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+}
+.td-scroll-up i {
+  position: relative;
+  color: #fff;
+  font-size: 25px;
+  display: block;
+  text-align: center;
+  width: 40px;
+  top: 7px;
+}
+.td-scroll-up:hover {
+  color: #fff;
+  background: #ff6600;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
 }
