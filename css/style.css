@@ -25,7 +25,7 @@
 
 /* Fonts */
 @font-face {
-  font-family: 'Conv_Tahoma';
+  font-family: 'Tahoma';
   src: url('../fonts/tahoma/Tahoma.eot');
   src: local('☺'), url('../fonts/tahoma/Tahoma.woff') format('woff'), url('../fonts/tahoma/Tahoma.ttf') format('truetype'), url('../fonts/tahoma/Tahoma.svg') format('svg');
   font-weight: normal;
@@ -465,7 +465,7 @@ h1, h2, h3, h4, h5, h6 {
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
-.block-product .item:hover .title h2 {
+.block-product .item:hover .title h2 a {
   color: #fff;
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
@@ -480,6 +480,9 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 15px 15px;
 }
 .block-product .item .title h2 {
+  font-size: 13px;
+}
+.block-product .item .title h2 a {
   color: #333333;
   line-height: 1.6;
   font-size: 13px;
@@ -728,6 +731,9 @@ footer .footer-top {
   color: #ff6600;
   padding-left: 10px;
 }
+.ft-contact address:last-child {
+  margin-bottom: 0;
+}
 
 /* Form Register */
 .resgis-form {
@@ -788,6 +794,7 @@ footer .footer-bot .container {
 .footer-bot p {
   line-height: 40px;
   color: #ffffff;
+  text-align: center;
 }
 
 /* Chat
@@ -1550,4 +1557,26 @@ h2.tit-page3 {
   bottom: 0;
   background-color: rgba(255, 255, 255, 0.5);
   z-index: -1;
+}
+
+.btn-search-mb {
+  position: absolute;
+  top: 90px;
+  left: 100%;
+  display: none;
+}
+.btn-search-mb i {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  background: #ff6600;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.btn-search-mb i:before {
+  content: "\f002";
+  font-family: "FontAwesome";
+  color: #fff;
 }

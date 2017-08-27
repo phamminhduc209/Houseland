@@ -53,12 +53,6 @@
   .container {
     width: auto;
   }
-  .block-search .input-serach {
-    width: 57%;
-  }
-  .block-search .select-choice {
-    width: 43%;
-  }
   .block-info i {
     font-size: 35px;
   }
@@ -208,7 +202,6 @@
   .nav-menu li > .submenu > li:hover, .nav-menu li > .submenu .submenu > li:hover {
     background: none;
   }
-
   .block-info .hotline,
   .block-info .email {
     width: 50%;
@@ -229,5 +222,109 @@
   }
   .block-info .hotline p {
     text-align: left;
+  }
+
+  .block-intro {
+    width: 100%;
+    text-align: center;
+  }
+  .btn-search-mb {
+    display: block;
+  }
+
+  .block-header-top {
+    display: none;
+  }
+}
+
+/*----------------
+[Styles for devices max 767px
+*/
+@media (max-width: 767px) {
+  .block-news .block-news-left,
+  .block-news .block-news-right {
+    width: 50%;
+  }
+  .block-number .list li {
+    width: 50%;
+  }
+  .ft-link {
+    margin-bottom: 20px;
+  }
+  .ft-link .item {
+    margin-bottom: 20px;
+  }
+}
+
+/*----------------
+[Styles for devices max 480px
+*/
+@media (max-width: 480px) {
+  .block-header-bottom {
+    padding: 20px 0;
+  }
+  .block-logo {
+    margin-bottom: 15px;
+  }
+  .block-info .hotline,
+  .block-info .email {
+    border: 1px solid #bbb;
+    position: relative;
+    margin: 0 10px;
+    width: 45%;
+    padding: 25px 15px 10px;
+    text-align: center;
+  }
+  .block-info i {
+    margin-right: 0;
+  }
+  .block-info i.fa-phone {
+    padding-top: 0;
+  }
+  .block-info i {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    background: #fff;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+  }
+  .block-info .hotline p,
+  .block-info .email p {
+    text-align: center;
+  }
+  .block-number .list li {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .block-number .list li:last-child {
+    margin-bottom: 0;
+  }
+  .footer-bot p {
+    text-align: left;
+  }
+  .block-news .block-news-left, .block-news .block-news-right {
+    width: 100%;
+  }
+  .block-news .block-news-left {
+    margin-bottom: 20px;
+  }
+}
+
+/*----------------
+[Styles for devices max 320px
+*/
+@media (max-width: 320px) {
+  .block-info .hotline, .block-info .email {
+    margin: 0;
+    width: 100%;
+  }
+  .block-info .hotline {
+    margin-bottom: 25px;
   }
 }
