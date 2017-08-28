@@ -533,22 +533,22 @@
 						<ul class="list">
 							<li class="col-sm-3 col-xs-12">
 								<p class="img"><img src="images/ascendant-bars-graphic.png" alt=""></p>
-								<p class="number">10 năm</p>
+								<p class="number"><span id="mycountUp1"></span> năm</p>
 								<p class="info">10 năm hình thành và phát triển</p>
 							</li>
 							<li class="col-sm-3 col-xs-12">
 								<p class="img"><img src="images/engineer.png" alt=""></p>
-								<p class="number">60</p>
+								<p class="number"><span id="mycountUp2"></span></p>
 								<p class="info">60 kiến trúc sư và kỹ sư</p>
 							</li>
 							<li class="col-sm-3 col-xs-12">
 								<p class="img"><img src="images/worker-of-construction-working-with-a-shovel-beside-material-pile.png" alt=""></p>
-								<p class="number">900</p>
+								<p class="number"><span id="mycountUp3"></span></p>
 								<p class="info">900 công nhân lành nghề</p>
 							</li>
 							<li class="col-sm-3 col-xs-12">
 								<p class="img"><img src="images/skyline.png" alt=""></p>
-								<p class="number">800</p>
+								<p class="number"><span id="mycountUp4"></span></p>
 								<p class="info">800 công trình đã thực hiện</p>
 							</li>
 						</ul>
@@ -639,8 +639,31 @@
 	<script src="lib/carousel/owl.carousel.min.js"></script>
 	<!-- sticky -->
     <script src="lib/sticky/jquery.sticky.js"></script>
+    <!-- countUp -->    
+	<script src="lib/countUp/countUp.js"></script>
     <!-- Js Common -->
 	<script src="js/common.js"></script>
+
+	<script type="text/javascript">
+                    
+        var options = {
+          useEasing : true,
+          useGrouping : true,
+          separator : '',
+          decimal : '',
+          prefix : '',
+          suffix : ''
+        };
+
+        var mycountUp1 = new CountUp("mycountUp1", 0, 10, 0, 7, options);
+        var mycountUp2 = new CountUp("mycountUp2", 0, 60, 0, 7, options);
+        var mycountUp3 = new CountUp("mycountUp3", 0, 900, 0, 7, options);
+        var mycountUp4 = new CountUp("mycountUp4", 0, 800, 0, 7, options);
+        mycountUp1.start();
+        mycountUp2.start();
+        mycountUp3.start();
+        mycountUp4.start();
+    </script>
 
 </body>
 </html>
