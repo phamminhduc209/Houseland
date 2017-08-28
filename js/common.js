@@ -62,6 +62,13 @@
     $(".menu").toggleClass("has-open");
     $("body").toggleClass("menu-open");
   });
+  $(".btn-search-mb").on( 'click', function() {
+    $(this).toggleClass('has-open');
+    $(".nav-toogle").removeClass("has-open");
+    $(".menu").removeClass("has-open");
+    $("body").removeClass("menu-open");
+    $(".block-search-mb").toggleClass("has-open");
+  });
 
   /*
    * 7. Main Menu
@@ -72,5 +79,25 @@
       $(this).toggleClass('open').siblings('.submenu').slideToggle();
     });
   });
+
+  //Hover Search Show Form
+  // $('.search-icon').hover(function(){
+  //   $('.top_search').addClass('hover');
+  // });
+  // $('.search-icon').click(function(){
+  //   $('.top_search').removeClass('hover');
+  // });
+  // $('.menu').hover(function(){
+  //   $('.top_search').removeClass('hover');
+  // });
+  // $(document).mouseup(function (e) {
+  //   var container = $(".top_search");
+  //   if (!container.is(e.target) // if the target of the click isn't the container...
+  //     && container.has(e.target).length === 0) // ... nor a descendant of the container
+  //   {
+  //     $('.top_search').removeClass('hover');
+  //   }
+  // });
+
 
 })(jQuery); // End of use strict

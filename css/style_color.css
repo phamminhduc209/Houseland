@@ -1,0 +1,52 @@
+body {
+  background-color: #fff;
+  color: #414141;
+  font: 13px Tahoma, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  overflow-x: hidden;
+  max-width: 1920px;
+  margin: 0 auto;
+  position: relative;
+  word-break: break-word;
+  line-height: 1.5;
+  outline: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.block-search .block-search-inner {
+  border: 1px solid #ff6600;
+  height: 40px;
+  position: relative;
+  margin-top: 10px;
+  background: #fff;
+}
+.block-search .block-search-inner form {
+  float: left;
+  width: 100%;
+  background: #ff6600;
+}
+.block-search .form-category:after {
+  content: "|";
+  color: #ff6600;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.btn-search {
+  width: 39px;
+  height: 39px;
+  background: #ff6600;
+  border: none;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.search-mb .btn-search {
+  background: #ff781e;
+}
