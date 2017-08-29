@@ -206,11 +206,11 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   left: 0;
 }
-.block-search #choice option {
+.block-search .choice option {
   color: black;
 }
 .block-search .empty,
-.block-search #choice option[value="0"] {
+.block-search .choice option[value="0"] {
   color: #a6a6a6;
 }
 .btn-search {
