@@ -98,6 +98,11 @@
   //     $('.top_search').removeClass('hover');
   //   }
   // });
+  
+  lightbox.option({
+    'resizeDuration': 200,
+    'wrapAround': true
+  })
 
 
 })(jQuery); // End of use strict
