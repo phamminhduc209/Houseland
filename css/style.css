@@ -1028,13 +1028,13 @@ footer .footer-bot .container {
   font-size: 13px;
 }
 .block-tags li.tags-link a {
-  width: 100px;
   height: 25px;
   line-height: 25px;
   text-align: center;
   background: #ffe0cc;
   border-radius: 50px;
   display: block;
+  padding: 0 10px;
 }
 .block-tags li.tags-link.active a,
 .block-tags li.tags-link:hover a {
