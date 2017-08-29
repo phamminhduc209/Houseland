@@ -62,13 +62,13 @@
     $(".menu").toggleClass("has-open");
     $("body").toggleClass("menu-open");
   });
-  $(".btn-search-mb").on( 'click', function() {
-    $(this).toggleClass('has-open');
-    $(".nav-toogle").removeClass("has-open");
-    $(".menu").removeClass("has-open");
-    $("body").removeClass("menu-open");
-    $(".block-search-mb").toggleClass("has-open");
-  });
+  // $(".btn-search-mb").on( 'click', function() {
+  //   $(this).toggleClass('has-open');
+  //   $(".nav-toogle").removeClass("has-open");
+  //   $(".menu").removeClass("has-open");
+  //   $("body").removeClass("menu-open");
+  //   $(".block-search-mb").toggleClass("has-open");
+  // });
 
   /*
    * 7. Main Menu
