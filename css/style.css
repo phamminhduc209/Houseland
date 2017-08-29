@@ -1128,7 +1128,8 @@ footer .footer-bot .container {
   color: #333;
   vertical-align: middle;
 }
-.block-links-sidebar .list li:hover a {
+.block-links-sidebar .list li:hover a,
+.block-links-sidebar .list li a.active {
   color: #ff6600;
 }
 
