@@ -176,7 +176,7 @@ h1, h2, h3, h4, h5, h6 {
 .block-search .block-search-inner form {
   float: left;
   width: 100%;
-  background: #ff6600;
+  /*background: #ff6600;*/
 }
 .block-search .input-serach {
   float: left;
