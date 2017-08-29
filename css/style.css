@@ -404,6 +404,14 @@ h1, h2, h3, h4, h5, h6 {
   display: none !important;
 }
 
+/* Block Slide
+  ========================================================================== */
+.block-side,
+.block-product,
+.block-members {
+  overflow: hidden;
+}
+
 /* Block Big Title
   ========================================================================== */
 .block_big-title h2 {
