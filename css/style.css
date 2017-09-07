@@ -846,7 +846,7 @@ footer .footer-top {
   margin-bottom: 3px;
 }
 .ft-contact address p.mail a {
-  color: #ff6600;
+  color: #fff;
 }
 
 /* Footer Bot */
@@ -1687,3 +1687,9 @@ h2.tit-page3 {
   background-color: rgba(255, 255, 255, 0.5);
   z-index: -1;
 }
+.ft-contact address p a {
+  color: #ff6600 !important;
+}
+/*.ft-contact address p a:hover {
+  color: #ff6600;
+}*/
