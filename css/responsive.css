@@ -75,10 +75,6 @@
 */
 @media all and (max-width: 899px) {
   #closefbchat{display:none}
-  .detail ul li {
-    width:100%;
-    padding: 10px 20px!important
-  }
 }
 
 /*----------------
