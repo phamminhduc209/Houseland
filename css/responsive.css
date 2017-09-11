@@ -76,8 +76,9 @@
 @media all and (max-width: 899px) {
   #closefbchat{display:none}
   .detail ul li {
-  width:100%;
-      padding: 10px 20px!important
+    width:100%;
+    padding: 10px 20px!important
+  }
 }
 
 /*----------------
@@ -142,6 +143,7 @@
     left: 0;
     z-index: 999;
     overflow-y: auto !important;
+    /*border-bottom: none;*/
   }
   .nav-menu>li {
     width: 100%;
