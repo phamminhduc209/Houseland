@@ -130,7 +130,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Commom
   ========================================================================== */
 .block {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   position: relative;
   display: block;
 }
@@ -483,7 +483,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #ff6600;
   display: block;
   text-align: center;
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
   text-transform: uppercase;
 }
 .block_big-title .desc {
@@ -1105,7 +1105,7 @@ footer .footer-bot .container {
   -webkit-transform: scale(1.2);
 }
 .block-ct-pro .item .des {
-  padding: 15px 10px;
+  padding: 5px 10px 0 10px;
   overflow: hidden;
 }
 .block-ct-pro .item .des a {
@@ -1116,7 +1116,7 @@ footer .footer-bot .container {
   height: 40px;
   overflow: hidden;
   display: block;
-  margin-bottom: 10px;
+  // margin-bottom: 10px;
   font-weight: bold;
 }
 .block-ct-pro .item .des .code {
