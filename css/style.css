@@ -1859,3 +1859,11 @@ box-shadow: 0px 0px 5px 1px rgba(176,176,176,1);
 }
 
 .block-article ul { padding-left: 15px; }
+.block-repadding .row {
+  margin-right: -7.5px;
+  margin-left: -7.5px;
+}
+.block-repadding .box-item {
+  padding-right: 7.5px;
+  padding-left: 7.5px;
+}
