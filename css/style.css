@@ -1076,6 +1076,7 @@ footer .footer-bot .container {
 }
 .block-ct-pro .item {
   border: 2px solid transparent;
+  list-style-type: none;
   padding: 5px;
   margin-bottom: 50px;
   -webkit-box-shadow: 0px 0px 5px 1px rgba(176,176,176,1);
@@ -1856,3 +1857,5 @@ box-shadow: 0px 0px 5px 1px rgba(176,176,176,1);
   text-align: center;
   line-height: 40px;
 }
+
+.block-aritcle ul { padding-left: 15px; }
