@@ -431,6 +431,15 @@
   }
 }
 
+@media (max-width: 414px) {
+  .block-repadding .box-item {
+    width: 100%;
+  }
+  .block-repadding .box-item .item {
+    margin-bottom: 15px;
+  }
+}
+
 /*----------------
 [Styles for devices max 375px
 */

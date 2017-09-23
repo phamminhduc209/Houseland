@@ -1093,6 +1093,7 @@ footer .footer-bot .container {
   overflow: hidden;
 }
 .block-ct-pro .item .thumb img {
+  margin: 0 auto;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   -webkit-transition: all 1s;
@@ -1250,7 +1251,6 @@ footer .footer-bot .container {
   padding-left: 15px;
   font-size: 15px;
   text-transform: uppercase;
-  max-width: 360px;
   position: relative;
 }
 .block-module .block-title h2 i {
