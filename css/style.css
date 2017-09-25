@@ -1867,3 +1867,65 @@ box-shadow: 0px 0px 5px 1px rgba(176,176,176,1);
   padding-right: 7.5px;
   padding-left: 7.5px;
 }
+
+.reviews-summary {
+  margin-bottom: 20px;
+}
+.reviews-summary .rating-title,
+.reviews-summary .rating-summary,
+.reviews-summary .rating-action {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.reviews-summary .rating-title {
+  font-weight: bold;
+}
+.rating-summary .rating-result {
+  font-size: 18px;
+  position: relative;
+  display: inline-block;
+  color: #a5a5a5;
+  letter-spacing: 3px;
+}
+.rating-summary .rating-result:before {
+  content: "\f005" "\f005" "\f005" "\f005" "\f005";
+  font-family: "FontAwesome";
+  white-space: nowrap;
+  color: #bfbfbf;
+}
+.rating-summary .rating-result > span {
+  color: #ff6600;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  overflow: hidden;
+  display: block;
+}
+.rating-summary .rating-result > span:before {
+  content: "\f005" "\f005" "\f005" "\f005" "\f005";
+  font-family: "FontAwesome";
+  white-space: nowrap;
+}
+.rating-summary .rating-result > span span {
+  display: none;
+}
+.rating-action span {
+  position: relative;
+  color: #bfbfbf;
+  padding-left: 15px;
+}
+.dot>span {
+  position: relative;
+  padding-left: 15px;
+}
+.dot>span:after {
+  content: "\f111";
+  font-family: "FontAwesome";
+  color: #bfbfbf;
+  font-size: 5px;
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
