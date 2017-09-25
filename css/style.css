@@ -1869,7 +1869,7 @@ box-shadow: 0px 0px 5px 1px rgba(176,176,176,1);
 }
 
 .reviews-summary {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .reviews-summary .rating-title,
 .reviews-summary .rating-summary,
@@ -1892,7 +1892,8 @@ box-shadow: 0px 0px 5px 1px rgba(176,176,176,1);
   content: "\f005" "\f005" "\f005" "\f005" "\f005";
   font-family: "FontAwesome";
   white-space: nowrap;
-  color: #bfbfbf;
+  color: #898989;
+  cursor: pointer;
 }
 .rating-summary .rating-result > span {
   color: #ff6600;
@@ -1913,7 +1914,7 @@ box-shadow: 0px 0px 5px 1px rgba(176,176,176,1);
 }
 .rating-action span {
   position: relative;
-  color: #bfbfbf;
+  color: #898989;
   padding-left: 15px;
 }
 .dot>span {
@@ -1923,9 +1924,38 @@ box-shadow: 0px 0px 5px 1px rgba(176,176,176,1);
 .dot>span:after {
   content: "\f111";
   font-family: "FontAwesome";
-  color: #bfbfbf;
+  color: #898989;
   font-size: 5px;
   position: absolute;
   top: 5px;
   left: 0;
+}
+
+.block-author {
+  margin-bottom: 15px;
+}
+.block-author ul {
+  padding-left: 0;
+}
+.block-author ul li {
+  display: inline-block;
+  list-style-type: none;
+  padding-right: 25px;
+  color: #898989;
+  position: relative;
+}
+.block-author ul li .name {
+  color: #f60;
+}
+.block-author ul li:before {
+  content: "\f111";
+  font-family: "FontAwesome";
+  color: #898989;
+  font-size: 5px;
+  position: absolute;
+  top: 8px;
+  left: -17px;
+}
+.block-author ul li:first-child:before {
+  display: none;
 }
