@@ -28,14 +28,6 @@
 		<link href='css/animations-ie-fix.css' rel='stylesheet'>
 		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>	<![endif]-->
-	<style>
-		.kk-star-ratings { width:120px; }
-		.kk-star-ratings .kksr-stars a { width:24px; }
-		.kk-star-ratings .kksr-stars, .kk-star-ratings .kksr-stars .kksr-fuel, .kk-star-ratings .kksr-stars a { height:24px; }
-		.kk-star-ratings .kksr-star.gray { background-image: url(https://hungit.net/wp-content/plugins/kk-star-ratings/gray.png); }
-		.kk-star-ratings .kksr-star.yellow { background-image: url(https://hungit.net/wp-content/plugins/kk-star-ratings/yellow.png); }
-		.kk-star-ratings .kksr-star.orange { background-image: url(https://hungit.net/wp-content/plugins/kk-star-ratings/orange.png); }
-	</style>
 </head>
 <body>
 
@@ -214,7 +206,7 @@
 								<div class="reviews-summary">
 									<div class="rating-title">Đánh giá bài viết:</div>
 	                                <div class="rating-summary">
-	                                    <input id="kartik" class="rating" data-stars="5" data-step="0.1" data-size="xs" title=""/>
+	                                    <input type="text" class="kv-fa rating-loading" value="2" data-size="xs" title="">
 	                                </div>
 	                                <div class="rating-action dot">
                                    		<span>Xếp hạng 3.5 - 150 Phiếu bầu</span>
@@ -418,6 +410,16 @@
 	<script src="https://apis.google.com/js/platform.js" async defer></script>
     <!-- Js Common -->
 	<script src="js/common.js"></script>
+
+	<script>
+    $(document).on('ready', function () {
+        $('.kv-fa').rating({
+            theme: 'krajee-fa',
+            filledStar: '<i class="fa fa-star"></i>',
+            emptyStar: '<i class="fa fa-star-o"></i>'
+        });
+    });    
+</script>
 
 </body>
 </html>
