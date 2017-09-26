@@ -27,8 +27,15 @@
 	<!--[if lt IE 9]>
 		<link href='css/animations-ie-fix.css' rel='stylesheet'>
 		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-	<![endif]-->
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>	<![endif]-->
+	<style>
+		.kk-star-ratings { width:120px; }
+		.kk-star-ratings .kksr-stars a { width:24px; }
+		.kk-star-ratings .kksr-stars, .kk-star-ratings .kksr-stars .kksr-fuel, .kk-star-ratings .kksr-stars a { height:24px; }
+		.kk-star-ratings .kksr-star.gray { background-image: url(https://hungit.net/wp-content/plugins/kk-star-ratings/gray.png); }
+		.kk-star-ratings .kksr-star.yellow { background-image: url(https://hungit.net/wp-content/plugins/kk-star-ratings/yellow.png); }
+		.kk-star-ratings .kksr-star.orange { background-image: url(https://hungit.net/wp-content/plugins/kk-star-ratings/orange.png); }
+	</style>
 </head>
 <body>
 
@@ -207,11 +214,7 @@
 								<div class="reviews-summary">
 									<div class="rating-title">Đánh giá bài viết:</div>
 	                                <div class="rating-summary">
-	                                    <div class="rating-result" title="70%">
-	                                        <span style="width:70%">
-	                                            <span><span>70</span>% of <span>100</span></span>
-	                                        </span>
-	                                    </div>
+	                                    <div id="stars-existing" class="starrr" data-rating='4'></div>
 	                                </div>
 	                                <div class="rating-action dot">
                                    		<span>Xếp hạng 3.5 - 150 Phiếu bầu</span>
@@ -413,6 +416,8 @@
 	<script src="https://apis.google.com/js/platform.js" async defer></script>
     <!-- Js Common -->
 	<script src="js/common.js"></script>
+	<!-- Js Star Rating -->
+	<script src="js/rating_view.js"></script>
 
 </body>
 </html>
